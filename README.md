@@ -4,6 +4,7 @@
 	
 
 Mon discord: Dams4K#1313
+
 Lien vers le dépo github: https://github.com/Dams4K/MyLastDiscordBot (heu ouais, j'ai pas mis GDCPBot car j'en ai très certainement pas le droit ahah)
 
 J'utilise python3.7 pour faire tourner le bot, normalement le seul module à installer c'est discord.py. J'ai listé tout les packages que pip avait d'installer, comme ça vous avez qu'à faire un python -m pip install -r requirements.txt pour tout installer dans la bonne version, ya ptet des trucs en trop idk.
