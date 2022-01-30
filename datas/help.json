@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Everyone",
+        "commands": {
+            "help": {
+                "command": "",
+                "description": "Affiche l'aide, enfin, si tu vois ça, c'est que tu sais déjà à quoi ça sert",
+                "example": []
+            },
+            "profil": {
+                "command": "`<mention/nom/id>`",
+                "description": "Affiche ton profil ou celui d'un membre de ce serveur.\nPour voir son profil, pas besoin de te mentionner juste faire la commande `profil` suffit",
+                "example": ["{bot.user.mention}"]
+            },
+            "inv": {
+                "command": "`<mention/nom/id>`",
+                "description": "Affiche ton inventaire ou celui d'un membre de ce serveur\nPour voir son inventaire, pas besoin de te mentionner juste faire la commande `inv` suffit",
+                "example": ["{member}"]
+            },
+            "buy": {
+                "command": "<id d'un shop>",
+                "description": "Permet d'acheter l'article du shop qui a l'id indiqué",
+                "example": ["1"]
+            },
+            "creatures": {
+                "command": "",
+                "description": "Affiche une image aléatoire d'une créature de l'univers des Gardiens Des Cités Perdu",
+                "example": []
+            },
+            "places": {
+                "command": "",
+                "description": "Affiche une image aléatoire d'un lieu de l'univers des Gardiens Des Cités Perdu",
+                "example": []
+            },
+            "characters": {
+                "command": "",
+                "description": "Affiche une image aléatoire d'un personnage de l'univers des Gardiens Des Cités Perdu",
+                "example": []
+            },
+            "tops": {
+                "command": "",
+                "description": "Affiche le top des membres avec le plus de coins/level. Il faut utiliser les flèches pour changer de top",
+                "example": []
+            },
+            "report": {
+                "command": "<rapport du bug>",
+                "description": "Permet de communiquer avec le programmeur du bot pour lui signaler un bug",
+                "example": ["le alt+f4 marche pas"]
+            },
+            "suggest": {
+                "command": "<suggestion pour le bot>",
+                "description": "Permet de communiquer avec le programmeur du bot pour lui suggèrer une idée",
+                "example": ["met moi toutes les perms plz"]
+            },
+            "stats": {
+                "command": "",
+                "description": "Permet de voir les stats du bot",
+                "example": []
+            },
+            "shops": {
+                "command": "",
+                "description": "Permet de voir la liste des shops du serveur",
+                "example": []
+            },
+            "shop": {
+                "command": "<shop_id>",
+                "description": "Permet de voir toute les infos d'un shop via son id",
+                "example": ["1"]
+            },
+            "updates": {
+                "command": "",
+                "description": "Affiche les infos disponibles sur la dernière mise-à-jour",
+                "example": []
+            }
+        }
+    },
+    {
+        "name": "Admin",
+        "commands": {
+            "level": {
+                "command": "<set/add/remove | message | enable/disable> <mention/nom/id | txt> <nombre de niveau>",
+                "description": "Permet :\n  - Gérer le niveau d'un membre du serveur\n  - Modifier le message d'annonce a chaque passage de level, pour mentionner/nommer l'utilisateur, il faut mettre `{{member.mention}}`/`{{member}}`/`{{member.name}}` pour afficher le level `{{level}}`, le nombre de coins gagné `{{coins}}`. **ATTENTION** il faut mettre les accolades\n   - Activer/Désactiver le systeme de level",
+                "example": ["add {member.mention} 10", "remove {member.id} 10", "set {member} 10", "message Bravo {{member.mention}}, tu es passer niveau {{level}}, et tu as gagné {{coins}} coins !!", "disable"]
+            },
+            "xp": {
+                "command": "<set/add/remove | set> <mention/nom/id | channel> <nombre d'xp' | on/off>",
+                "description": "Permet de gérer le niveau d'un membre du serveur",
+                "example": ["add {member.id} 10", "remove {member} 10", "set {member.mention} 10", "set channel off"]
+            },
+            "coins": {
+                "command": "<set/add/remove> <mention/nom/id> <nombre de coins>",
+                "description": "Permet de gérer le niveau d'un membre du serveur",
+                "example": ["add {member.id} 10 # rajoute 10 coins au membre qui a cette id {member.id}", "remove {member} 10 # enlève 10 coins au membre qui a ce nom#tag {member}", "set {member.mention} 10 # met 10 coins au membre mentionné"]
+            },
+            "shop": {
+                "command": "<id du shop/create> <set/remove> <name/price/cooldown/article <role/item> <name> >",
+                "description": "1 - Permet de voir les infos d'un shop via son id (commande executable par tout le monde)\n 2 - Permet de gérer un shop : créer un shop, lui mettre un article, un cooldown (les suffixes à utiliser sont `s/m/h/d`), lui mettre une description",
+                "example": ["create Mon Shop Custom # créer un shop avec le nom __Mon Shop Custom__", "1 set price 10 # met le prix du shop à 10 coins", "1 set name Mon Shop Avec Un Nom Custom # modifie le nom du shop en __Mon Shop Avec Un Nom Custom__", "1 set article role Mon Role # l'article du shop est un role qui a pour nom __Mon Role__", "1 set object item Mon Item # L'article du shop sera un item qui a pour nom __Mon Item__", "set cooldown 5d # On pourra acheter au shop tout les 5 jours min. Changez le `d` par `s/m/h/d` pour changer le temps du cooldown (s = seconds, m = minutes, h = hours, d = day"]
+            },
+            "salary": {
+                "command": "<add/remove> <rola_name/role_id/role_mention> <coins>",
+                "description": "Permet de créer/retirer un salaire qui est attribué à une role. On gagne ce salaire chaque lundi à 8h. Idée original de Gαbγ, Lubin et Nino",
+                "example": ["add MonRolePerso 1000", "remove MonRolePerso"]
+            },
+            "setprefix": {
+                "command": "<nouveau_prefix>",
+                "description": "Permet de changer le prefix du bot par un nouveau (par défaut `+`)",
+                "example": [";"]
+            },
+            "reset": {
+                "command": "<nomdumembre>",
+                "description": "Reset le profil d'un membre",
+                "example": ["{member}"]
+            }
+        }
+    }
+]

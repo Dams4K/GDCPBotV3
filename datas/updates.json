@@ -1,0 +1,57 @@
+[
+    {
+        "version": "3.0.0 [1/5]",
+        "description": "Ouf, la v3 arrive enfin, j'ai jamais eu autant la flemme de ma vie de faire un bot discord.. Enfin bon, la v3 est là et plein de nouveautées et modifications arrivent",
+        "fields": [
+            {
+                "name": "__Modifications__ [1/2]",
+                "value": "1 - Vous, les admins, vous vous souvenez quand vous vouliez rajouter/enlever des coins/level/xp à une personne ? 3 commandes existaient pour chaques éléments (`setcoins/addcoins/removecoins`), ce temps est révolu, maintenant, une seule commande existe pour chaques éléments. Exemple avec les coins :\n`coins <add/set/remove> <member_name/id/mention> <number>`\n\n**Avec les commande level et xp, des particularitées existe**. Tout les exemples sont montrés via le `{prefix}help`\n\n2 - Autre changement, ya longtemps (très longtemps) quelqu'un avait proposé de changer la commande `leaderboards` en `tops` car personnes avaient du mal à bien l'écrire donc maintenant la commande est `{prefix}tops`\n\n*Suite à la page suivante*"
+            }
+        ]
+    },
+    {
+        "version": "3.0.0 [2/5]",
+        "fields": [
+            {
+            "name": "__Modifications__ [2/2]",
+            "value": "3 - Les commandes pour la creation de shop ont aussi changé, toute les commandes lié au shop à l'exeption du `buy` commencera par `shop`. Exemple : `{prefix}shop create Mon Shop` | `{prefix}shop 1 set cooldown 30d`\n\n4 - Le prefix par défaut est maintenant `+` mais on peut changer le prefix via une commande -> voir dans la catégorie __**Nouveautés**__ __**/!\\ **__ Pour tous les serveurs qui avait ce bot avant le préfix `;` il n'a pas changé, pas besoin de le rechanger\n\n5 - Le système pour l'xp à aussi changé, avant, un message donnait 1xp, maintenant plus le message est long plus on gagne d'xp et le nombre d'xp requis pour passer au niveau suivant à augmenté__\n\n__"
+            }
+        ]
+    },
+    {
+        "version": "3.0.0 [3/5]",
+        "fields": [
+            {
+                "name": "__Nouveautés__",
+                "value": "1 - Voilà une commande importante pour l'avenir de ce bot : `{prefix}suggest` pour sugérer un idée pour ce bot, toute les idées sont bonne, sauf celles du genre *rajoute du contenu nsfw*, ça, c'est non d'avance\n\n2 - La commande `{prefix}stats` elle permet de voir les stats du bot : sur combien de serveur il est, et surtout, ce qui est pour moi la plus importante, combien de fois est utilisé une commande chaque jour. \n__**/!\\ **__ Aucune information sur la personne qui a exécuté la commande ne sera enregistré, je dis ça car certaines personnes pourraient le penser (ce qui est normal), c'est juste le nombre d'utilisation de chaques commandes qui sont enregistré. Ces statistiques sont reset chaque lundi 8:00.\n\n3 - `{prefix}salary` (plus de détaille sur l'utilisation de la commande dans le help) idée par Nino, Gαbγ et Lubin. Elle permet d'assigner un salaire à chaque un rôle\n__\n\n__"
+            }
+        ]
+    },
+    {
+        "version": "3.0.0 [4/5]",
+        "fields": [
+            {
+                "name": "__Suppressions__",
+                "value": "1 - La commande `{prefix}minesweeper` est supprimé, je ne sais pas si elle était beaucoup utilisé, mais dans tout les cas, le mieux c'est de téléchargé un minesweeper sur son ordi/tel si vous voulez y jouer\n__\n\n__"
+            }
+        ]
+    },
+    {
+        "version": "3.0.0 [5/5]",
+        "fields": [
+            {
+                "name": "__Pour rappel__",
+                "value": "1 - En cas de bugs utilisez la commande `{prefix}report` (`{prefix}help suggest` pour + d'info sur cette commande)\n\n2 - Si vous voulez aider le bot à se développer, utilisez la commande `{prefix}suggest` (`{prefix}help suggest` pour + d'info sur cette commande) n'hésitez pas à dire si vous voulez être créditer pour avoir créé la commande, si vous êtes plusieurs à avoir eu cette idée, ditent le aussi dans le message"
+            }
+        ]
+    },
+    {
+        "version": "3.0.1 [1/1]",
+        "fields": [
+            {
+                "name": "__Correction de bugs__",
+                "value": "Bon, normalement il ne devrait plus trop y avoir de bugs (si vous en voyez, utilisez la commande report).\n__List des bugs corrigé :__\n1 - Emojis du top (<:First:798229195549179915><:Second:798266104761024582><:Third:798229194743611434>) qui ne s'affichais pas\n2- Le top qui ne s'affichait pas\n3- Les loops (gain de salaire / resets des stats / Sauvegarde des données enregistré dans un .zip\n*Yavait ptet d'autres trucs mais j'ai oublié* :sweat_smile:"
+            }
+        ]
+    }
+]
